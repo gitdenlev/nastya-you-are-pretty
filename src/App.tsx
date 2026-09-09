@@ -8,7 +8,7 @@ import { PhotoItem } from './types';
 export const App: React.FC = () => {
   const [isSearching, setIsSearching] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
-  const [photos, setPhotos] = useState<PhotoItem[]>(getActivePhotos);
+  const [photos] = useState<PhotoItem[]>(getActivePhotos);
   const [resetKey, setResetKey] = useState(0);
 
   // Preload photos in background so they render immediately when search completes
